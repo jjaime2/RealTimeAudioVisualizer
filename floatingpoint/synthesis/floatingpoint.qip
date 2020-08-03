@@ -1,0 +1,52 @@
+set_global_assignment -entity "floatingpoint" -library "floatingpoint" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "floatingpoint" -library "floatingpoint" -name IP_TOOL_VERSION "17.0"
+set_global_assignment -entity "floatingpoint" -library "floatingpoint" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "floatingpoint" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../floatingpoint.sopcinfo"]
+set_global_assignment -entity "floatingpoint" -library "floatingpoint" -name SLD_INFO "QSYS_NAME floatingpoint HAS_SOPCINFO 1 GENERATION_ID 1582922474"
+set_global_assignment -library "floatingpoint" -name MISC_FILE [file join $::quartus(qip_path) "../floatingpoint.cmp"]
+set_global_assignment -library "floatingpoint" -name SLD_FILE [file join $::quartus(qip_path) "floatingpoint.debuginfo"]
+set_global_assignment -entity "floatingpoint" -library "floatingpoint" -name IP_TARGETED_DEVICE_FAMILY "Cyclone V"
+set_global_assignment -entity "floatingpoint" -library "floatingpoint" -name IP_GENERATED_DEVICE_FAMILY "{Cyclone V}"
+set_global_assignment -entity "floatingpoint" -library "floatingpoint" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "floatingpoint" -name MISC_FILE [file join $::quartus(qip_path) "../../floatingpoint.qsys"]
+set_global_assignment -entity "floatingpoint" -library "floatingpoint" -name IP_COMPONENT_NAME "ZmxvYXRpbmdwb2ludA=="
+set_global_assignment -entity "floatingpoint" -library "floatingpoint" -name IP_COMPONENT_DISPLAY_NAME "ZmxvYXRpbmdwb2ludA=="
+set_global_assignment -entity "floatingpoint" -library "floatingpoint" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "floatingpoint" -library "floatingpoint" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "floatingpoint" -library "floatingpoint" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "floatingpoint" -library "floatingpoint" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTU4MjkyMjQ3NA==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "floatingpoint" -library "floatingpoint" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBW::QXV0byBERVZJQ0VfRkFNSUxZ"
+set_global_assignment -entity "floatingpoint" -library "floatingpoint" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::NUNTRU1BNUYzMUM2::QXV0byBERVZJQ0U="
+set_global_assignment -entity "floatingpoint" -library "floatingpoint" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::Ng==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
+set_global_assignment -entity "fpoint2_multi" -library "floatingpoint" -name IP_COMPONENT_NAME "ZnBvaW50Ml9tdWx0aQ=="
+set_global_assignment -entity "fpoint2_multi" -library "floatingpoint" -name IP_COMPONENT_DISPLAY_NAME "RmxvYXRpbmcgUG9pbnQgSGFyZHdhcmUgMiBNdWx0aS1jeWNsZQ=="
+set_global_assignment -entity "fpoint2_multi" -library "floatingpoint" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "fpoint2_multi" -library "floatingpoint" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "fpoint2_multi" -library "floatingpoint" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "fpoint2_multi" -library "floatingpoint" -name IP_COMPONENT_VERSION "MTcuMA=="
+set_global_assignment -entity "fpoint2_multi" -library "floatingpoint" -name IP_COMPONENT_DESCRIPTION "VGhpcyBjb21wb25lbnQgcmVwcmVzZW50cyBwYXJ0IG9mIHRoZSBGbG9hdGluZyBQb2ludCBIYXJkd2FyZSAyIHdoZXJlIHRoZSBBcml0aG1ldGljLCBSb290IGFuZCBDb252ZXJzaW9uIG9wZXJhdGlvbnMgYXJlIHBlcmZvcm1lZA=="
+set_global_assignment -entity "fpoint2_multi" -library "floatingpoint" -name IP_COMPONENT_PARAMETER "YXJpdGhtZXRpY19wcmVzZW50::MQ==::QXJpdGhtZXRpYyBQcmVzZW50"
+set_global_assignment -entity "fpoint2_multi" -library "floatingpoint" -name IP_COMPONENT_PARAMETER "cm9vdF9wcmVzZW50::MQ==::Um9vdCBQcmVzZW50"
+set_global_assignment -entity "fpoint2_multi" -library "floatingpoint" -name IP_COMPONENT_PARAMETER "Y29udmVyc2lvbl9wcmVzZW50::MQ==::Q29udmVyc2lvbiBQcmVzZW50"
+set_global_assignment -entity "fpoint2_multi" -library "floatingpoint" -name IP_COMPONENT_PARAMETER "ZGV2aWNlRmFtaWx5::Q3ljbG9uZSBW::ZGV2aWNlRmFtaWx5"
+
+set_global_assignment -library "floatingpoint" -name VERILOG_FILE [file join $::quartus(qip_path) "floatingpoint.v"]
+set_global_assignment -library "floatingpoint" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/fpoint2_multi.vhd"]
+set_global_assignment -library "floatingpoint" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/fpoint2_multi_datapath.vhd"]
+set_global_assignment -library "floatingpoint" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/fpoint2_multi_dspba_library_package.vhd"]
+set_global_assignment -library "floatingpoint" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/fpoint2_multi_dspba_library.vhd"]
+set_global_assignment -library "floatingpoint" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/FPAddSub/FPAddSub.vhd"]
+set_global_assignment -library "floatingpoint" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/FPDiv/FPDiv.vhd"]
+set_global_assignment -library "floatingpoint" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/FPMult/FPMult.vhd"]
+set_global_assignment -library "floatingpoint" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/IntToFloat/IntToFloat.vhd"]
+set_global_assignment -library "floatingpoint" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/FloatToInt/FloatToInt.vhd"]
+set_global_assignment -library "floatingpoint" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/FPSqrt/FPSqrt_safe_path.vhd"]
+set_global_assignment -library "floatingpoint" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/FPSqrt/FPSqrt.vhd"]
+set_global_assignment -library "floatingpoint" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/FPSqrt/FPSqrt_memoryC0_uid59_sqrtTableGenerator_lutmem.hex"]
+set_global_assignment -library "floatingpoint" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/FPSqrt/FPSqrt_memoryC1_uid60_sqrtTableGenerator_lutmem.hex"]
+set_global_assignment -library "floatingpoint" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/FPSqrt/FPSqrt_memoryC2_uid61_sqrtTableGenerator_lutmem.hex"]
+
+set_global_assignment -entity "fpoint2_multi" -library "floatingpoint" -name IP_TOOL_NAME "altera_nios_custom_instr_floating_point_2_multi"
+set_global_assignment -entity "fpoint2_multi" -library "floatingpoint" -name IP_TOOL_VERSION "17.0"
+set_global_assignment -entity "fpoint2_multi" -library "floatingpoint" -name IP_TOOL_ENV "Qsys"

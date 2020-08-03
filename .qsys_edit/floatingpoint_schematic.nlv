@@ -1,0 +1,7 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst floatingpoint.nios_custom_instr_floating_point_2_multi_0 -pg 1 -lvl 1 -y 30
+preplace inst floatingpoint -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc EXPORT<net_container>floatingpoint</net_container>(SLAVE)floatingpoint.s1,(SLAVE)nios_custom_instr_floating_point_2_multi_0.s1) 1 0 1 N
+levelinfo -pg 1 0 80 370
+levelinfo -hier floatingpoint 90 160 290

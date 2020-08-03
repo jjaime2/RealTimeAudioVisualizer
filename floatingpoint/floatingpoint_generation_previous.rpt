@@ -1,0 +1,62 @@
+Info: Starting: Create simulation model
+Info: qsys-generate "C:\Users\jose3\Documents\EE371-Digital-Systems\Lab 6 NEW\floatingpoint.qsys" --simulation=VERILOG --allow-mixed-language-simulation --output-directory="C:\Users\jose3\Documents\EE371-Digital-Systems\Lab 6 NEW\floatingpoint\simulation" --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading Lab 6 NEW/floatingpoint.qsys
+Progress: Reading input file
+Progress: Adding nios_custom_instr_floating_point_2_multi_0 [altera_nios_custom_instr_floating_point_2_multi 17.0]
+Progress: Parameterizing module nios_custom_instr_floating_point_2_multi_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: floatingpoint: Generating floatingpoint "floatingpoint" for SIM_VERILOG
+Info: nios_custom_instr_floating_point_2_multi_0: "floatingpoint" instantiated altera_nios_custom_instr_floating_point_2_multi "nios_custom_instr_floating_point_2_multi_0"
+Info: floatingpoint: Done "floatingpoint" with 2 modules, 15 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd="C:\Users\jose3\Documents\EE371-Digital-Systems\Lab 6 NEW\floatingpoint\floatingpoint.spd" --output-directory="C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6 NEW/floatingpoint/simulation/" --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=C:\Users\jose3\Documents\EE371-Digital-Systems\Lab 6 NEW\floatingpoint\floatingpoint.spd --output-directory=C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6 NEW/floatingpoint/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6 NEW/floatingpoint/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6 NEW/floatingpoint/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6 NEW/floatingpoint/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	1 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6 NEW/floatingpoint/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6 NEW/floatingpoint/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate "C:\Users\jose3\Documents\EE371-Digital-Systems\Lab 6 NEW\floatingpoint.qsys" --block-symbol-file --output-directory="C:\Users\jose3\Documents\EE371-Digital-Systems\Lab 6 NEW\floatingpoint" --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading Lab 6 NEW/floatingpoint.qsys
+Progress: Reading input file
+Progress: Adding nios_custom_instr_floating_point_2_multi_0 [altera_nios_custom_instr_floating_point_2_multi 17.0]
+Progress: Parameterizing module nios_custom_instr_floating_point_2_multi_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate "C:\Users\jose3\Documents\EE371-Digital-Systems\Lab 6 NEW\floatingpoint.qsys" --synthesis=VERILOG --output-directory="C:\Users\jose3\Documents\EE371-Digital-Systems\Lab 6 NEW\floatingpoint\synthesis" --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading Lab 6 NEW/floatingpoint.qsys
+Progress: Reading input file
+Progress: Adding nios_custom_instr_floating_point_2_multi_0 [altera_nios_custom_instr_floating_point_2_multi 17.0]
+Progress: Parameterizing module nios_custom_instr_floating_point_2_multi_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: floatingpoint: Generating floatingpoint "floatingpoint" for QUARTUS_SYNTH
+Info: nios_custom_instr_floating_point_2_multi_0: "floatingpoint" instantiated altera_nios_custom_instr_floating_point_2_multi "nios_custom_instr_floating_point_2_multi_0"
+Info: floatingpoint: Done "floatingpoint" with 2 modules, 15 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

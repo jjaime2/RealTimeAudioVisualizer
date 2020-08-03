@@ -1,0 +1,3 @@
+Info (10281): Verilog HDL Declaration information at square_root.sv(8): object "N" differs only in case from object "n" in the same scope File: C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/square_root.sv Line: 8
+Info (10281): Verilog HDL Declaration information at Sample_Buffer.sv(9): object "N" differs only in case from object "n" in the same scope File: C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/Sample_Buffer.sv Line: 9
+Info (10281): Verilog HDL Declaration information at FFT_Buffer.sv(9): object "N" differs only in case from object "n" in the same scope File: C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/FFT_Buffer.sv Line: 9

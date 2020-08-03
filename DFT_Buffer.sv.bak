@@ -1,0 +1,110 @@
+module DFT_Buffer #(parameter N = 1024, K = 48000, fs = 48000, P = 10, data_width = 24, fp_width = 32)
+	(
+		input logic clk, rst, en, 
+		input logic [data_width - 1:0] data_in,
+		output logic [fp_width - 1:0] buffer_out [0:N - 1]
+	);
+	
+	// k is the particular frequency being analyzed
+	// n is the current sample from the signal
+	integer k, n, n_count;
+	integer buf_ctr;
+	logic ItoF_done;
+	logic buf1_valid, buf2_valid;
+	logic init;
+	logic [fp_width - 1:0] data_ItoF;
+	logic processing;
+	logic start;
+	
+	// Buffers
+	logic [fp_width - 1:0] buffer_1 [0:N - 1];
+	logic [fp_width - 1:0] buffer_2 [0:N - 1];
+	
+	assign start = en && ~processing;
+	
+	floatingpoint ItoF (.clk(clk), .clk_en(processing), .dataa({{8{data_in}}, data_in}), .datab(0),
+									.n(2), .reset(rst), .reset_req(1'b0), .start(start),
+									.done(ItoF_done), .result(data_ItoF));
+	
+	always_ff @(posedge clk) begin
+		if (rst) begin
+			processing <= 1'b0;
+			init <= 1'b1;
+			n_count <= 0;
+			for (n = 0; n < N; n++) begin
+				buffer_1[n] <= 0;
+				buffer_2[n] <= 0;
+			end
+		end else if (ItoF_done) begin
+			processing <= 1'b0;
+			
+			if (~buf1_valid || init) begin
+				buffer_1[0] <= data_ItoF;
+				
+				for (n = 1; n < N; n++) begin
+					buffer_1[n] <= buffer_1[n - 1];
+				end
+				
+				n_count <= n_count + 1;
+				
+				if (n_count > N) begin
+					init <= 1'b0;
+					buf1_valid <= 1'b1;
+					buf2_valid <= 1'b0;
+					n_count <= 0;
+					buffer_out <= buffer_1;
+				end
+			end else if (~buf2_valid && ~init) begin
+				buffer_2[0] <= data_ItoF;
+				
+				for (n = 1; n < N; n++) begin
+					buffer_2[n] <= buffer_2[n - 1];
+				end
+				
+				n_count <= n_count + 1;
+				
+				if (n_count > N) begin
+					buf1_valid <= 1'b0;
+					buf2_valid <= 1'b1;
+					n_count <= 0;
+					buffer_out <= buffer_2;
+				end
+			end 
+		end else if (start) begin
+			processing <= 1'b1;
+		end
+	end
+endmodule
+
+module DFT_Buffer_testbench();
+	parameter N = 1024, K = 48000, fs = 48000, data_width = 24;
+	
+	logic clk, en, rst;
+	logic [data_width - 1:0] data_in;
+	logic [data_width - 1:0] buffer_out [0:N - 1];
+	
+	DFT_Buffer dut (.*);
+	
+	// Set up the clock
+	integer ctr;
+	parameter CLOCK_PERIOD = 100;
+	
+	initial begin
+		ctr <= 0;
+		clk <= 0;
+		forever #(CLOCK_PERIOD / 2) clk <= ~clk;
+	end
+	
+	initial begin
+		rst <= 1'b1; en <= 1'b0; @(posedge clk);
+		rst <= 1'b0; en <= 1'b1; @(posedge clk);
+		
+		
+		repeat (10 * N) begin
+			data_in <= ctr; ctr <= ctr + 1'b1; @(posedge clk);
+		end
+		
+		$stop;
+	end
+endmodule
+

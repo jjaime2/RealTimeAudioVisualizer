@@ -1,0 +1,13 @@
+module IntToFloat 
+	(
+		input logic clk, rst, read,
+		input logic [data_width - 1:0] data_in,
+		output logic [data_width - 1:0] ItoF_data;
+	);
+	
+	floatingpoint ItoF (.clk(clk), .clk_en(processing), .dataa({{8{data_in}}, data_in}), .datab(0),
+									.n(2), .reset(rst), .reset_req(1'b0), .start(start),
+									.done(ItoF_done), .result(ItoF_data));
+	
+endmodule
+	

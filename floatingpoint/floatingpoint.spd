@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="simulation/submodules/fpoint2_multi.vhd"
+   type="VHDL"
+   library="nios_custom_instr_floating_point_2_multi_0" />
+ <file
+   path="simulation/submodules/fpoint2_multi_datapath.vhd"
+   type="VHDL"
+   library="nios_custom_instr_floating_point_2_multi_0" />
+ <file
+   path="simulation/submodules/fpoint2_multi_dspba_library_package.vhd"
+   type="VHDL"
+   library="nios_custom_instr_floating_point_2_multi_0" />
+ <file
+   path="simulation/submodules/fpoint2_multi_dspba_library.vhd"
+   type="VHDL"
+   library="nios_custom_instr_floating_point_2_multi_0" />
+ <file
+   path="simulation/submodules/FPAddSub/FPAddSub.vhd"
+   type="VHDL"
+   library="nios_custom_instr_floating_point_2_multi_0" />
+ <file
+   path="simulation/submodules/FPDiv/FPDiv.vhd"
+   type="VHDL"
+   library="nios_custom_instr_floating_point_2_multi_0" />
+ <file
+   path="simulation/submodules/FPMult/FPMult.vhd"
+   type="VHDL"
+   library="nios_custom_instr_floating_point_2_multi_0" />
+ <file
+   path="simulation/submodules/IntToFloat/IntToFloat.vhd"
+   type="VHDL"
+   library="nios_custom_instr_floating_point_2_multi_0" />
+ <file
+   path="simulation/submodules/FloatToInt/FloatToInt.vhd"
+   type="VHDL"
+   library="nios_custom_instr_floating_point_2_multi_0" />
+ <file
+   path="simulation/submodules/FPSqrt/FPSqrt_safe_path.vhd"
+   type="VHDL"
+   library="nios_custom_instr_floating_point_2_multi_0" />
+ <file
+   path="simulation/submodules/FPSqrt/FPSqrt.vhd"
+   type="VHDL"
+   library="nios_custom_instr_floating_point_2_multi_0" />
+ <file
+   path="simulation/submodules/FPSqrt/FPSqrt_memoryC0_uid59_sqrtTableGenerator_lutmem.hex"
+   type="HEX"
+   library="nios_custom_instr_floating_point_2_multi_0" />
+ <file
+   path="simulation/submodules/FPSqrt/FPSqrt_memoryC1_uid60_sqrtTableGenerator_lutmem.hex"
+   type="HEX"
+   library="nios_custom_instr_floating_point_2_multi_0" />
+ <file
+   path="simulation/submodules/FPSqrt/FPSqrt_memoryC2_uid61_sqrtTableGenerator_lutmem.hex"
+   type="HEX"
+   library="nios_custom_instr_floating_point_2_multi_0" />
+ <file path="simulation/floatingpoint.v" type="VERILOG" />
+ <topLevel name="floatingpoint" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

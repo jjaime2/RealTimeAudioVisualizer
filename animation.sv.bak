@@ -1,0 +1,99 @@
+// Jose Jaime
+// 2/5/20
+// EE 371
+// animation Module
+//
+// Uses the line_drawer module to create an animation using lines with different coordinates
+module animation
+	(
+		input logic clk, reset,
+		output logic pixel_color,
+		output logic [9:0] x0, x1,
+		output logic [8:0] y0, y1,
+		output logic drawDone
+	);
+	
+	logic [1:0] counter;
+	
+//	initial begin
+//		pixel_color = 1'b0;
+//		x0 = 0;
+//		y0 = 0;
+//		x1 = 300;
+//		y1 = 300;
+//	end	
+	
+	always_ff @(posedge clk) begin
+		if (reset) begin
+			pixel_color <= 1'b0;
+			counter <= 1'b0;
+			x0 <= 1;
+			x1 <= 299;
+		end else begin
+			counter <= counter + 1'b1;
+			if (counter == 2'b00) begin
+				drawDone <= 1'b0;
+				if (x0 > 0 && x0 < 300) begin
+					x0 <= x0 + 1'b1;
+				end else begin
+					x0 <= 1;
+				end
+				
+				if (x1 > 0 && x1 < 300) begin
+					x1 <= x1 - 1'b1;
+				end else begin
+					x1 <= 299;
+				end
+				
+				y0 <= 120;
+				y1 <= 120;
+				
+//				if (y0 > 0 && y0 < 299) begin
+//					y0 <= y0 + 2'b10;
+//				end else begin
+//					y0 <= 1;
+//				end
+//				
+//				if (y1 > 1 && y1 < 300) begin
+//					y1 <= y1 - 2'b10;
+//				end else begin
+//					y1 <= 299;
+//				end
+				
+				pixel_color <= 1'b1;
+			end else if (counter == 2'b01) begin
+				drawDone <= 1'b1;
+				pixel_color <= 1'b0;
+			end
+		end
+	end
+endmodule
+
+// Used to test the animation module
+module animation_testbench();
+	logic clk, reset, pixel_color;
+	
+	// x and y coordinates for the start and end points of the line
+	logic [9:0]	x0, x1; 
+	logic [8:0] y0, y1;
+	
+	parameter CLK_Period = 100;
+	
+	initial begin
+		clk <= 1'b0;
+		forever #(CLK_Period/2) clk <= ~clk;
+	end
+	
+	animation dut (clk, reset, pixel_color, x0, x1, y0, y1);
+	
+	initial begin
+		reset <= 1; @(posedge clk);
+		reset <= 0; @(posedge clk);
+		
+		repeat(3000) begin
+			@(posedge clk);
+		end
+		
+		$stop();
+	end
+endmodule

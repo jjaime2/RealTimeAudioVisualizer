@@ -1,0 +1,9 @@
+module fft_N1024 #(parameter N = 1024, K = 48000, fs = 48000, P = 10, data_width = 24, fp_width = 32)
+	(
+		
+	);
+	
+	
+	
+	
+endmodule

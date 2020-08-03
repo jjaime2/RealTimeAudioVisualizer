@@ -1,0 +1,378 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/simulation/modelsim
+vAltera_UP_Audio_Bit_Counter
+Z1 !s110 1583437083
+!i10b 1
+!s100 J2Tb5SPZN>>^6S@MM9o:c1
+I@?R9ajcKA4gZE4AGB9@Xm3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1582769435
+8C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_audio_bit_counter.v
+FC:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_audio_bit_counter.v
+Z4 L0 49
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1583437083.000000
+!s107 C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_audio_bit_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6|C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_audio_bit_counter.v|
+!i113 1
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work {+incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6}
+Z9 tCvgOpt 0
+n@altera_@u@p_@audio_@bit_@counter
+vAltera_UP_Audio_In_Deserializer
+R1
+!i10b 1
+!s100 MnK8@IQLcda;1gGBW7@Tz0
+I6IRe>XhEad6F2c00IMAg92
+R2
+R0
+R3
+8C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_audio_in_deserializer.v
+FC:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_audio_in_deserializer.v
+Z10 L0 47
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_audio_in_deserializer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6|C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_audio_in_deserializer.v|
+!i113 1
+R7
+R8
+R9
+n@altera_@u@p_@audio_@in_@deserializer
+vAltera_UP_Audio_Out_Serializer
+R1
+!i10b 1
+!s100 BllhdjOFFm6Rj]o@Xid882
+ILXHQ`Sz1@]4Eb[da:]@Z[0
+R2
+R0
+R3
+8C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_audio_out_serializer.v
+FC:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_audio_out_serializer.v
+R10
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_audio_out_serializer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6|C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_audio_out_serializer.v|
+!i113 1
+R7
+R8
+R9
+n@altera_@u@p_@audio_@out_@serializer
+vAltera_UP_Clock_Edge
+R1
+!i10b 1
+!s100 XaX6^HY04T3X?D32?HdN>2
+I4hLnR@RJnz<@Of=[96hH?2
+R2
+R0
+R3
+8C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_clock_edge.v
+FC:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_clock_edge.v
+Z11 L0 48
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_clock_edge.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6|C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_clock_edge.v|
+!i113 1
+R7
+R8
+R9
+n@altera_@u@p_@clock_@edge
+vAltera_UP_I2C
+R1
+!i10b 1
+!s100 JU94J3RToJ0DChmlIi^B43
+IZcIeI?IAn8B24iECF4T5e3
+R2
+R0
+R3
+8C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_i2c.v
+FC:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_i2c.v
+R11
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_i2c.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6|C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_i2c.v|
+!i113 1
+R7
+R8
+R9
+n@altera_@u@p_@i2@c
+vAltera_UP_I2C_AV_Auto_Initialize
+R1
+!i10b 1
+!s100 TbIA;9787GSRoV9be_N2^2
+IF_bb]?z7e`C`Nz36VA>PL0
+R2
+R0
+R3
+8C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_i2c_av_auto_initialize.v
+FC:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_i2c_av_auto_initialize.v
+R11
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_i2c_av_auto_initialize.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6|C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_i2c_av_auto_initialize.v|
+!i113 1
+R7
+R8
+R9
+n@altera_@u@p_@i2@c_@a@v_@auto_@initialize
+vAltera_UP_Slow_Clock_Generator
+R1
+!i10b 1
+!s100 U@B3NehPQRXcdeI<e=@I53
+IMeT==Le@UDYf^3L6cZhH63
+R2
+R0
+R3
+8C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_slow_clock_generator.v
+FC:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_slow_clock_generator.v
+L0 53
+R5
+r1
+!s85 0
+31
+Z12 !s108 1583437082.000000
+!s107 C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_slow_clock_generator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6|C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_slow_clock_generator.v|
+!i113 1
+R7
+R8
+R9
+n@altera_@u@p_@slow_@clock_@generator
+vAltera_UP_SYNC_FIFO
+R1
+!i10b 1
+!s100 jDg=^5VOBFbFho_;gZbiA1
+IK:J4b]N7>OO1P@9XeEe113
+R2
+R0
+R3
+8C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_sync_fifo.v
+FC:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_sync_fifo.v
+R10
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_sync_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6|C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/altera_up_sync_fifo.v|
+!i113 1
+R7
+R8
+R9
+n@altera_@u@p_@s@y@n@c_@f@i@f@o
+vaudio_and_video_config
+Z13 !s110 1583437082
+!i10b 1
+!s100 z3>_mDg4hMjn4VjXHn00U3
+IE:04CgeN_d>dgaR8lf=Am3
+R2
+R0
+R3
+8C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/audio_and_video_config.v
+FC:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/audio_and_video_config.v
+R4
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/audio_and_video_config.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6|C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/audio_and_video_config.v|
+!i113 1
+R7
+R8
+R9
+vaudio_codec
+R1
+!i10b 1
+!s100 43h1ad@K@aG98IRVc4i1M1
+IzHkY@SkKE8c>4FgQo_lmJ0
+R2
+R0
+R3
+8C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/audio_codec.v
+FC:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/audio_codec.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/audio_codec.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6|C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/audio_codec.v|
+!i113 1
+R7
+R8
+R9
+vclock_generator
+R13
+!i10b 1
+!s100 39OA<gKn`aijkLgT:8]8i2
+IgH0o_XRk6M5jz=BZD?ZQY3
+R2
+R0
+R3
+8C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/clock_generator.v
+FC:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/clock_generator.v
+R11
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/clock_generator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6|C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/clock_generator.v|
+!i113 1
+R7
+R8
+R9
+vFFT_Buffer
+Z14 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R1
+!i10b 1
+!s100 QYRo2745f6OaGiUV]]A?@3
+Ij5Cn_R<Fj@B[gVHFP1GVi2
+R2
+Z15 !s105 FFT_Buffer_sv_unit
+S1
+R0
+Z16 w1583437023
+Z17 8C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/FFT_Buffer.sv
+Z18 FC:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/FFT_Buffer.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+Z19 !s107 C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/FFT_Buffer.sv|
+Z20 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6|C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/FFT_Buffer.sv|
+!i113 1
+Z21 o-sv -work work
+Z22 !s92 -sv -work work {+incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6}
+R9
+n@f@f@t_@buffer
+vFFT_Buffer_testbench
+R14
+R1
+!i10b 1
+!s100 =CYW5]Jid=AS3_XP]lVzO2
+IHeC5@K=f8>j>=kP@a2lB62
+R2
+R15
+S1
+R0
+R16
+R17
+R18
+L0 88
+R5
+r1
+!s85 0
+31
+R6
+R19
+R20
+!i113 1
+R21
+R22
+R9
+n@f@f@t_@buffer_testbench
+vmult_1eu
+R1
+!i10b 1
+!s100 DH[OXg;oR3B5z4l8>mVTI1
+IEz7cL7MLo7bSb`0^el`XI2
+R2
+R0
+Z23 w1583288990
+8C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/db/mult_1eu.v
+FC:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/db/mult_1eu.v
+Z24 L0 29
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/db/mult_1eu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/db|C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/db/mult_1eu.v|
+!i113 1
+R7
+Z25 !s92 -vlog01compat -work work {+incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/db}
+R9
+vmult_rau
+R1
+!i10b 1
+!s100 M8:Y6@VOl;U75M?fYX=Oz2
+I0HFzkWCz?AR3FKSG8=SKI0
+R2
+R0
+R23
+8C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/db/mult_rau.v
+FC:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/db/mult_rau.v
+R24
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/db/mult_rau.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/db|C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/db/mult_rau.v|
+!i113 1
+R7
+R25
+R9
+vmult_sau
+R1
+!i10b 1
+!s100 KXWKzCcaZF7eNm]X2<6fh0
+IClj0VVoKeIYbiiJ92l^YS0
+R2
+R0
+R23
+8C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/db/mult_sau.v
+FC:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/db/mult_sau.v
+R24
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/db/mult_sau.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/db|C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6/db/mult_sau.v|
+!i113 1
+R7
+R25
+R9

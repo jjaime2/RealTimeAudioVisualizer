@@ -1,0 +1,143 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6 NEW/simulation/modelsim
+Pauk_dspip_lib_pkg
+Z1 DPx4 work 18 auk_dspip_math_pkg 0 22 HLen474gWL3kV7TlegKSL0
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 w1582769435
+Z6 dC:/Users/jose3/Documents/EE371-Digital-Systems/lab6/simulation/modelsim
+8C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/fft/synthesis/submodules/auk_dspip_lib_pkg.vhd
+FC:/Users/jose3/Documents/EE371-Digital-Systems/lab6/fft/synthesis/submodules/auk_dspip_lib_pkg.vhd
+l0
+L28
+Vml8d=Admb@GhYj3k19ohO0
+!s100 KcRlL:CTnlUz=1CF=kC_S0
+Z7 OV;C;10.5b;63
+31
+Z8 !s110 1583137322
+!i10b 1
+Z9 !s108 1583137322.000000
+!s90 -reportprogress|300|-93|-work|fft|C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/fft/synthesis/submodules/auk_dspip_lib_pkg.vhd|
+!s107 C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/fft/synthesis/submodules/auk_dspip_lib_pkg.vhd|
+!i113 1
+Z10 o-93 -work fft
+Z11 tExplicit 1 CvgOpt 0
+Pauk_dspip_math_pkg
+R2
+R3
+R4
+R5
+R6
+Z12 8C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/fft/synthesis/submodules/auk_dspip_math_pkg.vhd
+Z13 FC:/Users/jose3/Documents/EE371-Digital-Systems/lab6/fft/synthesis/submodules/auk_dspip_math_pkg.vhd
+l0
+L51
+VHLen474gWL3kV7TlegKSL0
+!s100 [z_3ODE8b:W7XDJ[_]HTW0
+R7
+31
+b1
+R8
+!i10b 1
+R9
+Z14 !s90 -reportprogress|300|-93|-work|fft|C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/fft/synthesis/submodules/auk_dspip_math_pkg.vhd|
+Z15 !s107 C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/fft/synthesis/submodules/auk_dspip_math_pkg.vhd|
+!i113 1
+R10
+R11
+Bbody
+R1
+R2
+R3
+R4
+l0
+L128
+VXRUNYk;H?1[ag8fPda6Tf3
+!s100 `941_Ff6o7=GBNnXYB1eU3
+R7
+31
+R8
+!i10b 1
+R9
+R14
+R15
+!i113 1
+R10
+R11
+vfft
+!s110 1583137321
+!i10b 1
+!s100 BBoMo^F:bQaC>1i7;AFLK3
+I2hXi5C0z1:B>_bLY>b0o]3
+Z16 VDg1SIo80bB@j0V0VzS_@n1
+R6
+w1582873199
+8C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/fft/synthesis/fft.v
+FC:/Users/jose3/Documents/EE371-Digital-Systems/lab6/fft/synthesis/fft.v
+L0 6
+Z17 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1583137321.000000
+!s107 C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/fft/synthesis/fft.v|
+!s90 -reportprogress|300|-vlog01compat|-work|fft|+incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/fft/synthesis|C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/fft/synthesis/fft.v|
+!i113 1
+Z18 o-vlog01compat -work fft
+!s92 -vlog01compat -work fft +incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/fft/synthesis
+Z19 tCvgOpt 0
+vfft_fft_ii_0
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R8
+!i10b 1
+!s100 n>@d91zgzWI[lj9U^3D543
+I;b;`IfNNDk=NJ[m[<?Q`V0
+R16
+!s105 fft_fft_ii_0_sv_unit
+S1
+R6
+R5
+8C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/fft/synthesis/submodules/fft_fft_ii_0.sv
+FC:/Users/jose3/Documents/EE371-Digital-Systems/lab6/fft/synthesis/submodules/fft_fft_ii_0.sv
+L0 15
+R17
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/fft/synthesis/submodules/fft_fft_ii_0.sv|
+!s90 -reportprogress|300|-sv|-work|fft|+incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/fft/synthesis/submodules|C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/fft/synthesis/submodules/fft_fft_ii_0.sv|
+!i113 1
+o-sv -work fft
+!s92 -sv -work fft +incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/fft/synthesis/submodules
+R19
+vfft_testbench
+!i10b 1
+R16
+r1
+!s85 0
+31
+!s100 oLLDKJbcH<A_K>5970O;J2
+I:e5O6Y5]H6_WkSbQPN1Jg2
+R0
+w1582852466
+8C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6 NEW/fft/synthesis/fft.v
+FC:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6 NEW/fft/synthesis/fft.v
+L0 51
+R17
+!s108 1582853008.000000
+!s107 C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6 NEW/fft/synthesis/fft.v|
+!s90 -reportprogress|300|-vlog01compat|-work|fft|+incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6 NEW/fft/synthesis|C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6 NEW/fft/synthesis/fft.v|
+!i113 1
+R18
+!s92 -vlog01compat -work fft {+incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6 NEW/fft/synthesis}
+R19

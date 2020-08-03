@@ -1,0 +1,48 @@
+module ItoF #(parameter N = 1024, K = 48000, fs = 48000, P = 10, data_width = 24, fp_width = 32)
+	(
+		input logic clk, rst, read,
+		input logic [data_width - 1:0] data_in,
+		output logic [fp_width - 1:0] ItoF_data,
+		output logic ItoF_done
+	);
+	
+	floatingpoint ItoF1 (.clk(clk), .clk_en(clk_en1), .dataa(), .datab(0),
+									.n(1), .reset(rst), .reset_req(1'b0), .start(start1),
+									.done(ItoF_done1), .result(ItoF_data1));
+	
+endmodule
+	
+`timescale 1 ps / 1 ps
+module ItoF_testbench();
+	parameter N = 1024, K = 48000, fs = 48000, P = 10, data_width = 24, fp_width = 32;
+	
+	logic clk, rst, read;
+	logic [data_width - 1:0] data_in;
+	logic [fp_width - 1:0] ItoF_data;
+	logic ItoF_done;
+	
+	ItoF dut (.*);
+	
+	// Set up the clock
+	integer ctr;
+	parameter CLOCK_PERIOD = 100;
+	
+	initial begin
+		ctr <= 0;
+		clk <= 0;
+		forever #(CLOCK_PERIOD / 2) clk <= ~clk;
+	end
+	
+	initial begin
+		rst <= 1'b1; @(posedge clk);
+		rst <= 1'b0; @(posedge clk);
+		
+		read <= 1'b1; @(posedge clk);
+		
+		repeat (500) begin
+			read <= ~read; data_in <= ctr; ctr <= ctr + 1'b1; @(posedge clk);
+		end
+		
+		$stop;
+	end
+endmodule

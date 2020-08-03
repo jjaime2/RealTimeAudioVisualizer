@@ -1,0 +1,12 @@
+module square_root #(parameter N = 1024, K = 48000, fs = 48000, P = 10, data_width = 24, fp_width = 32)
+	(
+		input logic clk, rst, summing_complete,
+		input logic [fp_width - 1:0] sum_buffer_in [0:N - 1],
+		output logic [fp_width - 1:0] sum_buffer [0:N - 1],
+		output logic magnitude_done
+	);
+	
+	
+	
+	
+endmodule

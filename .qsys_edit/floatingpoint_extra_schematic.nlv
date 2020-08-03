@@ -1,0 +1,10 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst unsaved.nios_custom_instr_floating_point_2_0.fpci_combi -pg 1
+preplace inst unsaved.nios_custom_instr_floating_point_2_0 -pg 1 -lvl 1 -y 50
+preplace inst unsaved.nios_custom_instr_floating_point_2_0.fpci_multi -pg 1
+preplace inst unsaved -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.s1,(SLAVE)nios_custom_instr_floating_point_2_0.s1) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)nios_custom_instr_floating_point_2_0.s2,(SLAVE)unsaved.s2) 1 0 1 NJ
+levelinfo -pg 1 0 50 310
+levelinfo -hier unsaved 60 130 260

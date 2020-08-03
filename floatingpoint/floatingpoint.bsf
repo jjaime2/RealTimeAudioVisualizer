@@ -1,0 +1,121 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 192 248)
+	(text "floatingpoint" (rect 61 -1 105 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 232 20 244)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" (font_size 8)))
+		(text "clk" (rect 4 61 22 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 64 72)(line_width 1))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "clk_en" (rect 0 0 25 12)(font "Arial" (font_size 8)))
+		(text "clk_en" (rect 4 77 40 88)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 64 88)(line_width 1))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "dataa[31..0]" (rect 0 0 44 12)(font "Arial" (font_size 8)))
+		(text "dataa[31..0]" (rect 4 93 76 104)(font "Arial" (font_size 8)))
+		(line (pt 0 104)(pt 64 104)(line_width 3))
+	)
+	(port
+		(pt 0 120)
+		(input)
+		(text "datab[31..0]" (rect 0 0 44 12)(font "Arial" (font_size 8)))
+		(text "datab[31..0]" (rect 4 109 76 120)(font "Arial" (font_size 8)))
+		(line (pt 0 120)(pt 64 120)(line_width 3))
+	)
+	(port
+		(pt 0 136)
+		(input)
+		(text "n[2..0]" (rect 0 0 24 12)(font "Arial" (font_size 8)))
+		(text "n[2..0]" (rect 4 125 46 136)(font "Arial" (font_size 8)))
+		(line (pt 0 136)(pt 64 136)(line_width 3))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "reset" (rect 0 0 20 12)(font "Arial" (font_size 8)))
+		(text "reset" (rect 4 141 34 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 64 152)(line_width 1))
+	)
+	(port
+		(pt 0 168)
+		(input)
+		(text "reset_req" (rect 0 0 38 12)(font "Arial" (font_size 8)))
+		(text "reset_req" (rect 4 157 58 168)(font "Arial" (font_size 8)))
+		(line (pt 0 168)(pt 64 168)(line_width 1))
+	)
+	(port
+		(pt 0 184)
+		(input)
+		(text "start" (rect 0 0 17 12)(font "Arial" (font_size 8)))
+		(text "start" (rect 4 173 34 184)(font "Arial" (font_size 8)))
+		(line (pt 0 184)(pt 64 184)(line_width 1))
+	)
+	(port
+		(pt 0 200)
+		(output)
+		(text "done" (rect 0 0 18 12)(font "Arial" (font_size 8)))
+		(text "done" (rect 4 189 28 200)(font "Arial" (font_size 8)))
+		(line (pt 0 200)(pt 64 200)(line_width 1))
+	)
+	(port
+		(pt 0 216)
+		(output)
+		(text "result[31..0]" (rect 0 0 44 12)(font "Arial" (font_size 8)))
+		(text "result[31..0]" (rect 4 205 82 216)(font "Arial" (font_size 8)))
+		(line (pt 0 216)(pt 64 216)(line_width 3))
+	)
+	(drawing
+		(text "s1" (rect 53 43 118 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 69 67 156 144)(font "Arial" (color 0 0 0)))
+		(text "clk_en" (rect 69 83 174 176)(font "Arial" (color 0 0 0)))
+		(text "dataa" (rect 69 99 168 208)(font "Arial" (color 0 0 0)))
+		(text "datab" (rect 69 115 168 240)(font "Arial" (color 0 0 0)))
+		(text "n" (rect 69 131 144 272)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 69 147 168 304)(font "Arial" (color 0 0 0)))
+		(text "reset_req" (rect 69 163 192 336)(font "Arial" (color 0 0 0)))
+		(text "start" (rect 69 179 168 368)(font "Arial" (color 0 0 0)))
+		(text "done" (rect 69 195 162 400)(font "Arial" (color 0 0 0)))
+		(text "result" (rect 69 211 174 432)(font "Arial" (color 0 0 0)))
+		(text " floatingpoint " (rect 138 232 366 474)(font "Arial" ))
+		(line (pt 64 32)(pt 128 32)(line_width 1))
+		(line (pt 128 32)(pt 128 232)(line_width 1))
+		(line (pt 64 232)(pt 128 232)(line_width 1))
+		(line (pt 64 32)(pt 64 232)(line_width 1))
+		(line (pt 65 52)(pt 65 220)(line_width 1))
+		(line (pt 66 52)(pt 66 220)(line_width 1))
+		(line (pt 0 0)(pt 192 0)(line_width 1))
+		(line (pt 192 0)(pt 192 248)(line_width 1))
+		(line (pt 0 248)(pt 192 248)(line_width 1))
+		(line (pt 0 0)(pt 0 248)(line_width 1))
+	)
+)

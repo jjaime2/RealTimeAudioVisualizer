@@ -1,0 +1,13 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/Lab\ 6\ NEW {C:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6 NEW/DFT_Buffer.sv}
+vlib fft
+vmap fft fft
+vlib floatingpoint
+vmap floatingpoint floatingpoint
+

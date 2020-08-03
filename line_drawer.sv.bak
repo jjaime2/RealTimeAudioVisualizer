@@ -1,0 +1,202 @@
+// Jose Jaime
+// 2/5/20
+// EE 371
+// line_drawer Module
+//
+// Draws a best fit line given coordinates (x0, y0) and (x1, y1)
+module line_drawer(
+	input logic clk, reset, drawDone,
+	
+	// x and y coordinates for the start and end points of the line
+	input logic [9:0]	x0, x1, 
+	input logic [8:0] y0, y1,
+
+	//outputs cooresponding to the coordinate pair (x, y)
+	output logic [9:0] x,
+	output logic [8:0] y,
+	
+	// debug signals
+	output logic is_steep,
+	output logic signed [10:0] calc_x0, calc_x1, calc_x,
+	output logic signed [10:0] calc_y0, calc_y1, calc_y,
+	output logic signed [10:0] error,
+	output logic signed [10:0] calc_error,
+	output logic signed [10:0] abs_dx,
+	output logic signed [10:0] abs_dy,
+	output logic signed [10:0] calc_dx,
+	output logic signed [10:0] calc_abs_dy,
+	output logic signed [1:0] y_step
+	);
+	
+//	logic is_steep;
+//	logic signed [10:0]	calc_x0, calc_x1, calc_x;
+//	logic signed [10:0] calc_y0, calc_y1, calc_y;
+//	logic signed [10:0] error;
+//	logic signed [10:0] calc_error;
+//	logic signed [10:0] abs_dx;
+//	logic signed [10:0] abs_dy;
+//	logic signed [10:0] calc_dx;
+//	logic signed [10:0] calc_abs_dy;
+//	logic signed [1:0] y_step;
+	logic [10:0] init_error;
+	
+	abs_diff abs_deltax ({x1[9], x1}, {x0[9], x0}, abs_dx);
+	abs_diff abs_deltay ({{2{y1[8]}}, y1}, {{2{y0[8]}}, y0}, abs_dy);
+	abs_diff calc_abs_deltay (calc_y1, calc_y0, calc_abs_dy);
+	
+	assign calc_dx = calc_x1 + (~(calc_x0) + 1'b1);
+	assign is_steep = (abs_dy > abs_dx);
+	assign error = calc_error + calc_abs_dy;
+	assign init_error = -(calc_x1 - calc_x0) >>> 1;
+	
+//	initial begin
+//		calc_error = init_error;
+//	end
+	
+	always_comb begin
+		if (is_steep && (y0 > y1)) begin
+			calc_x0 = {{2{y1[8]}}, y1};
+			calc_x1 = {{2{y0[8]}}, y0};
+			calc_y0 = {x1[9], x1};
+			calc_y1 = {x0[9], x0};
+			
+		end else if (is_steep && !(y0 > y1)) begin
+			calc_x0 = {{2{y0[8]}}, y0};
+			calc_y0 = {x0[9], x0};
+			calc_x1 = {{2{y1[8]}}, y1};
+			calc_y1 = {x1[9], x1};
+		end else if (!is_steep && (x0 > x1)) begin
+			calc_x0 = {x1[9], x1};
+			calc_y0 = {{2{y1[8]}}, y1};
+			calc_x1 = {x0[9], x0};
+			calc_y1 = {{2{y0[8]}}, y0};
+		end else begin
+			calc_x0 = {x0[9], x0};
+			calc_x1 = {x1[9], x1};
+			calc_y0 = {{2{y0[8]}}, y0};
+			calc_y1 = {{2{y1[8]}}, y1};
+		end
+		
+		if (calc_y0 < calc_y1) begin
+			y_step = 2'b01;
+		end else begin
+			y_step = 2'b11;
+		end
+	end
+
+	always_ff @(posedge clk) begin
+		if (reset || drawDone) begin
+			calc_x <= calc_x0;
+			calc_y <= calc_y0;
+			calc_error <= init_error;
+			x <= x + 1'b1;
+			if (x == 639) begin
+				y <= y + 1'b1;
+				x <= 0;
+				
+				if (y == 479) begin
+					y <= 0;
+				end
+			end
+		end else if (calc_x < calc_x1) begin
+			calc_x <= calc_x + 1'b1;
+			
+			if (error >= 0) begin
+				if (y_step < 0) begin
+					calc_y <= calc_y - 1'b1;
+				end else if (y_step > 0) begin
+					calc_y <= calc_y + 1'b1;
+				end
+				calc_error <= error - calc_dx;
+			end else begin
+				calc_error <= error;
+			end
+			
+			if (is_steep) begin
+				// Swap x and y
+				x <= calc_y[9:0];
+				y <= calc_x[8:0];
+			end else begin
+				x <= calc_x[9:0];
+				y <= calc_y[8:0];
+			end
+		end else if (calc_x >= calc_x1 || calc_x < calc_x0) begin
+			calc_x <= calc_x0;
+			calc_y <= calc_y0;
+			calc_error <= init_error;
+		end
+	end
+endmodule
+
+// Used to test the line_drawer module
+module line_drawer_testbench();
+	logic clk, reset, drawDone;
+	
+	// x and y coordinates for the start and end points of the line
+	logic [9:0]	x0, x1; 
+	logic [8:0] y0, y1;
+
+	//outputs cooresponding to the coordinate pair (x, y)
+	logic [9:0] x;
+	logic [8:0] y;
+	
+	// debug signals
+	logic is_steep;
+	logic [10:0] calc_x0, calc_x1, calc_x;
+	logic [10:0] calc_y0, calc_y1, calc_y;
+	logic signed [10:0] error;
+	logic signed [10:0] calc_error;
+	logic signed [10:0] abs_dx;
+	logic signed [10:0] abs_dy;
+	logic signed [10:0] calc_dx;
+	logic signed [10:0] calc_abs_dy;
+	logic signed [1:0] y_step;
+	
+	parameter CLK_Period = 100;
+	
+	initial begin
+		clk <= 1'b0;
+		forever #(CLK_Period/2) clk <= ~clk;
+	end
+	
+	line_drawer dut (clk, reset, drawDone, x0, x1, y0, y1, x, y, is_steep, calc_x0, calc_x1, calc_x, calc_y0, calc_y1, calc_y, error, calc_error, abs_dx, abs_dy, calc_dx, calc_abs_dy, y_step);
+	
+	initial begin
+		reset <= 1; x0 <= 0; y0 <= 0; x1 <= 240; y1 <= 240; @(posedge clk);
+		reset <= 0; @(posedge clk);
+		
+		repeat(500) begin
+			@(posedge clk);
+		end
+		
+		reset <= 1; x0 <= 0; y0 <= 0; x1 <= 10; y1 <= 240; @(posedge clk);
+		reset <= 0; @(posedge clk);
+		
+		repeat(500) begin
+			@(posedge clk);
+		end
+		
+		reset <= 1; x0 <= 260; y0 <= 0; x1 <=40; y1 <= 240; @(posedge clk);
+		reset <= 0; @(posedge clk);
+		
+		repeat(500) begin
+			@(posedge clk);
+		end
+		
+		reset <= 1; x0 <= 40; y0 <= 0; x1 <=260; y1 <= 240; @(posedge clk);
+		reset <= 0; @(posedge clk);
+		
+		repeat(500) begin
+			@(posedge clk);
+		end
+		
+		reset <= 1; x0 <= 40; y0 <= 120; x1 <=260; y1 <= 120; @(posedge clk);
+		reset <= 0; @(posedge clk);
+		
+		repeat(500) begin
+			@(posedge clk);
+		end
+		
+		$stop();
+	end
+endmodule

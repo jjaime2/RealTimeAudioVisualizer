@@ -1,0 +1,506 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/jose3/Documents/EE371-Digital-Systems/Lab 6 NEW/simulation/modelsim
+vfloatingpoint
+!s110 1583137321
+!i10b 1
+!s100 8Pok6<G;h8dojK]A=5kUL2
+I<1<Ph8XK=O:ndD68kMmk11
+VDg1SIo80bB@j0V0VzS_@n1
+Z0 dC:/Users/jose3/Documents/EE371-Digital-Systems/lab6/simulation/modelsim
+Z1 w1582922474
+8C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/floatingpoint.v
+FC:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/floatingpoint.v
+L0 6
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1583137321.000000
+!s107 C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/floatingpoint.v|
+!s90 -reportprogress|300|-vlog01compat|-work|floatingpoint|+incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis|C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/floatingpoint.v|
+!i113 1
+o-vlog01compat -work floatingpoint
+!s92 -vlog01compat -work floatingpoint +incdir+C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis
+tCvgOpt 0
+Efloattoint
+R1
+Z2 DPx3 lpm 14 lpm_components 0 22 KI__]ZC5^Q9zCzFdn3gGS0
+Z3 DPx9 altera_mf 20 altera_mf_components 0 22 :YRc5<ojH^WgP]^Vezi9c1
+Z4 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+Z5 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z8 8C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/FloatToInt/FloatToInt.vhd
+Z9 FC:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/FloatToInt/FloatToInt.vhd
+l0
+L47
+VP2QOU<`gCa7JYHfnClEbn3
+!s100 b43>>9lJWA<FA=V9OOR;80
+Z10 OV;C;10.5b;63
+31
+Z11 !s110 1583137322
+!i10b 1
+Z12 !s108 1583137322.000000
+Z13 !s90 -reportprogress|300|-93|-work|floatingpoint|C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/FloatToInt/FloatToInt.vhd|
+Z14 !s107 C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/FloatToInt/FloatToInt.vhd|
+!i113 1
+Z15 o-93 -work floatingpoint
+Z16 tExplicit 1 CvgOpt 0
+Anormal
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 floattoint 0 22 P2QOU<`gCa7JYHfnClEbn3
+l132
+L55
+V9726=E7dT`KOSN<oW47mY2
+!s100 nP<h;k]T2YMC5JG6[;jUK3
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Efpaddsub
+R1
+R2
+R3
+Z17 DPx4 work 35 fpoint2_multi_dspba_library_package 0 22 55CF`2X_eH]d1SMXAoNBP3
+R4
+R5
+R6
+R7
+R0
+Z18 8C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/FPAddSub/FPAddSub.vhd
+Z19 FC:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/FPAddSub/FPAddSub.vhd
+l0
+L48
+V3<koLfUH@EFLmzBQUS^FD2
+!s100 LVR??_@MmmCQLSTPM6]X43
+R10
+31
+Z20 !s110 1583137323
+!i10b 1
+Z21 !s108 1583137323.000000
+Z22 !s90 -reportprogress|300|-93|-work|floatingpoint|C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/FPAddSub/FPAddSub.vhd|
+Z23 !s107 C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/FPAddSub/FPAddSub.vhd|
+!i113 1
+R15
+R16
+Anormal
+R2
+R3
+R17
+R4
+R5
+R6
+R7
+DEx4 work 8 fpaddsub 0 22 3<koLfUH@EFLmzBQUS^FD2
+l526
+L59
+V72ceTS]PcQKXnSDT9P<mz2
+!s100 Z24nb<gfOP7E84dJP=k<g1
+R10
+31
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 1
+R15
+R16
+Efpdiv
+R1
+R5
+R6
+R7
+R0
+Z24 8C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/FPDiv/FPDiv.vhd
+Z25 FC:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/FPDiv/FPDiv.vhd
+l0
+L24
+V]Cm=9ni65Igl1I`4OXnYn1
+!s100 Omc;5kMm6fB?1H76VQZg80
+R10
+31
+R11
+!i10b 1
+R12
+Z26 !s90 -reportprogress|300|-93|-work|floatingpoint|C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/FPDiv/FPDiv.vhd|
+Z27 !s107 C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/FPDiv/FPDiv.vhd|
+!i113 1
+R15
+R16
+Abeh
+R5
+R6
+R7
+DEx4 work 5 fpdiv 0 22 ]Cm=9ni65Igl1I`4OXnYn1
+l119
+L37
+VmiMZgZWMKJhkJQ]m4Eb403
+!s100 jCL05EOM1fm4W9FS;[W161
+R10
+31
+R11
+!i10b 1
+R12
+R26
+R27
+!i113 1
+R15
+R16
+Efpmult
+R1
+R2
+R3
+R17
+R4
+R5
+R6
+R7
+R0
+Z28 8C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/FPMult/FPMult.vhd
+Z29 FC:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/FPMult/FPMult.vhd
+l0
+L48
+VcZTQ7O;I`;@[7k`ZFV_iF0
+!s100 bbA9i;haXK40d5DENVCUS0
+R10
+31
+R20
+!i10b 1
+R21
+Z30 !s90 -reportprogress|300|-93|-work|floatingpoint|C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/FPMult/FPMult.vhd|
+Z31 !s107 C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/FPMult/FPMult.vhd|
+!i113 1
+R15
+R16
+Anormal
+R2
+R3
+R17
+R4
+R5
+R6
+R7
+DEx4 work 6 fpmult 0 22 cZTQ7O;I`;@[7k`ZFV_iF0
+l297
+L58
+Vc::V]]@59dT<]N^>IE6KA3
+!s100 2GMLZ>e@Y5XHfRMz>5QFm0
+R10
+31
+R20
+!i10b 1
+R21
+R30
+R31
+!i113 1
+R15
+R16
+Efpoint2_multi
+R1
+Z32 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z33 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+R6
+R7
+R0
+Z34 8C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/fpoint2_multi.vhd
+Z35 FC:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/fpoint2_multi.vhd
+l0
+L18
+V2KR0LBA02<Bi@Banak1Ez2
+!s100 _6V>NAUgn[6=fzomCDcQ?3
+R10
+31
+R11
+!i10b 1
+R12
+Z36 !s90 -reportprogress|300|-93|-work|floatingpoint|C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/fpoint2_multi.vhd|
+Z37 !s107 C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/fpoint2_multi.vhd|
+!i113 1
+R15
+R16
+Afpmulti
+R32
+R33
+R6
+R7
+DEx4 work 13 fpoint2_multi 0 22 2KR0LBA02<Bi@Banak1Ez2
+l72
+L37
+V:Y4L=Gzal`T6W:]NozWYV0
+!s100 aQ`^I00kM^FRebR:K5UN21
+R10
+31
+R11
+!i10b 1
+R12
+R36
+R37
+!i113 1
+R15
+R16
+Efpoint2_multi_datapath
+R1
+R4
+R5
+R6
+R7
+R0
+Z38 8C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/fpoint2_multi_datapath.vhd
+Z39 FC:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/fpoint2_multi_datapath.vhd
+l0
+L19
+V@AVOg2fRE1n@nR`zkTBKJ2
+!s100 j@V@Un5L^dz8Rid`R`cCA2
+R10
+31
+R11
+!i10b 1
+R12
+Z40 !s90 -reportprogress|300|-93|-work|floatingpoint|C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/fpoint2_multi_datapath.vhd|
+Z41 !s107 C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/fpoint2_multi_datapath.vhd|
+!i113 1
+R15
+R16
+Afp_data_path
+R4
+R5
+R6
+R7
+DEx4 work 22 fpoint2_multi_datapath 0 22 @AVOg2fRE1n@nR`zkTBKJ2
+l102
+L37
+V>EWeWB[bD8[1`YkDIILnL1
+!s100 _F=R9C2mlXXgXRdQn11;H0
+R10
+31
+R11
+!i10b 1
+R12
+R40
+R41
+!i113 1
+R15
+R16
+Efpoint2_multi_dspba_delay
+R1
+R17
+R6
+R7
+R0
+Z42 8C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/fpoint2_multi_dspba_library.vhd
+Z43 FC:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/fpoint2_multi_dspba_library.vhd
+l0
+L30
+VmUGifhAcGdm=YgSlbdVI?0
+!s100 J>1j_hOg@gB7K:czCD>SB1
+R10
+31
+R20
+!i10b 1
+R12
+Z44 !s90 -reportprogress|300|-93|-work|floatingpoint|C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/fpoint2_multi_dspba_library.vhd|
+Z45 !s107 C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/fpoint2_multi_dspba_library.vhd|
+!i113 1
+R15
+R16
+Adelay
+R17
+R6
+R7
+DEx4 work 25 fpoint2_multi_dspba_delay 0 22 mUGifhAcGdm=YgSlbdVI?0
+l48
+L45
+VFCga><F3YIT_H;]F;OLDf2
+!s100 6PXP8Vd=VadD0_RBB5nzR1
+R10
+31
+R20
+!i10b 1
+R12
+R44
+R45
+!i113 1
+R15
+R16
+Pfpoint2_multi_dspba_library_package
+R6
+R7
+R1
+R0
+8C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/fpoint2_multi_dspba_library_package.vhd
+FC:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/fpoint2_multi_dspba_library_package.vhd
+l0
+L29
+V55CF`2X_eH]d1SMXAoNBP3
+!s100 [PbhoEVWSGU[6lcONmF9o2
+R10
+31
+R11
+!i10b 1
+R12
+!s90 -reportprogress|300|-93|-work|floatingpoint|C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/fpoint2_multi_dspba_library_package.vhd|
+!s107 C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/fpoint2_multi_dspba_library_package.vhd|
+!i113 1
+R15
+R16
+Efpsqrt
+R1
+Z46 DPx4 work 16 fpsqrt_safe_path 0 22 gnMmaom:9h0Sj2kE2?lMB0
+R2
+R3
+R17
+R4
+R5
+R6
+R7
+R0
+Z47 8C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/FPSqrt/FPSqrt.vhd
+Z48 FC:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/FPSqrt/FPSqrt.vhd
+l0
+L48
+VoK3]XhYkS]FlhC^k8oi?D3
+!s100 [iY^SlQO32LFOOo8LW>683
+R10
+31
+R20
+!i10b 1
+R21
+Z49 !s90 -reportprogress|300|-93|-work|floatingpoint|C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/FPSqrt/FPSqrt.vhd|
+Z50 !s107 C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/FPSqrt/FPSqrt.vhd|
+!i113 1
+R15
+R16
+Anormal
+R46
+R2
+R3
+R17
+R4
+R5
+R6
+R7
+Z51 DEx4 work 6 fpsqrt 0 22 oK3]XhYkS]FlhC^k8oi?D3
+l287
+L60
+Z52 VUIF>EgAkbb32n:7UoIP]f2
+Z53 !s100 =`fH@`m809ZBW<D9`;>XR0
+R10
+31
+R20
+!i10b 1
+R21
+R49
+R50
+!i113 1
+R15
+R16
+Pfpsqrt_safe_path
+R6
+R7
+R1
+R0
+Z54 8C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/FPSqrt/FPSqrt_safe_path.vhd
+Z55 FC:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/FPSqrt/FPSqrt_safe_path.vhd
+l0
+L18
+VgnMmaom:9h0Sj2kE2?lMB0
+!s100 >_>g`=j@_>]]nVz=oaMeH3
+R10
+31
+b1
+R11
+!i10b 1
+R12
+Z56 !s90 -reportprogress|300|-93|-work|floatingpoint|C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/FPSqrt/FPSqrt_safe_path.vhd|
+Z57 !s107 C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/FPSqrt/FPSqrt_safe_path.vhd|
+!i113 1
+R15
+R16
+Bbody
+R46
+R6
+R7
+l0
+L22
+VCnhkYPjKz^bEbkX^RAWhY0
+!s100 @PKAdB1DCbT<<bge:GDOd3
+R10
+31
+R11
+!i10b 1
+R12
+R56
+R57
+!i113 1
+R15
+R16
+Einttofloat
+R1
+R2
+R3
+R17
+R4
+R5
+R6
+R7
+R0
+Z58 8C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/IntToFloat/IntToFloat.vhd
+Z59 FC:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/IntToFloat/IntToFloat.vhd
+l0
+L49
+V:=4S@]96bMUlG9f^NXF2>0
+!s100 OJN^2W:LXC>9iaAni7@B41
+R10
+31
+R20
+!i10b 1
+R21
+Z60 !s90 -reportprogress|300|-93|-work|floatingpoint|C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/IntToFloat/IntToFloat.vhd|
+Z61 !s107 C:/Users/jose3/Documents/EE371-Digital-Systems/lab6/floatingpoint/synthesis/submodules/IntToFloat/IntToFloat.vhd|
+!i113 1
+R15
+R16
+Anormal
+R2
+R3
+R17
+R4
+R5
+R6
+R7
+DEx4 work 10 inttofloat 0 22 :=4S@]96bMUlG9f^NXF2>0
+l200
+L58
+VXlhg<]:mVPhIB9QLYcUC43
+!s100 nZTl42LL@UcH2<K?z=R5]2
+R10
+31
+R20
+!i10b 1
+R21
+R60
+R61
+!i113 1
+R15
+R16

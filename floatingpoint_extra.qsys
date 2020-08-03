@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags="INTERNAL_COMPONENT=true"
+   categories="" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element nios_custom_instr_floating_point_2_0
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="device" value="5CSEMA5F31C6" />
+ <parameter name="deviceFamily" value="Cyclone V" />
+ <parameter name="deviceSpeedGrade" value="6" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="true" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceScript></instanceScript>
+ <interface
+   name="s1"
+   internal="nios_custom_instr_floating_point_2_0.s1"
+   type="nios_custom_instruction"
+   dir="end">
+  <port name="s1_dataa" internal="s1_dataa" />
+  <port name="s1_datab" internal="s1_datab" />
+  <port name="s1_n" internal="s1_n" />
+  <port name="s1_result" internal="s1_result" />
+ </interface>
+ <interface
+   name="s2"
+   internal="nios_custom_instr_floating_point_2_0.s2"
+   type="nios_custom_instruction"
+   dir="end">
+  <port name="s2_clk" internal="s2_clk" />
+  <port name="s2_clk_en" internal="s2_clk_en" />
+  <port name="s2_dataa" internal="s2_dataa" />
+  <port name="s2_datab" internal="s2_datab" />
+  <port name="s2_n" internal="s2_n" />
+  <port name="s2_reset" internal="s2_reset" />
+  <port name="s2_reset_req" internal="s2_reset_req" />
+  <port name="s2_start" internal="s2_start" />
+  <port name="s2_done" internal="s2_done" />
+  <port name="s2_result" internal="s2_result" />
+ </interface>
+ <module
+   name="nios_custom_instr_floating_point_2_0"
+   kind="altera_nios_custom_instr_floating_point_2"
+   version="17.0"
+   enabled="1"
+   autoexport="1">
+  <parameter name="AUTO_DEVICE" value="5CSEMA5F31C6" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="6" />
+  <parameter name="arithmetic_present" value="false" />
+  <parameter name="comparison_present" value="false" />
+  <parameter name="conversion_present" value="true" />
+  <parameter name="deviceFamily" value="Cyclone V" />
+  <parameter name="root_present" value="false" />
+ </module>
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
+ <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
+</system>

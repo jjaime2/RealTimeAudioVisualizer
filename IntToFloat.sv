@@ -1,0 +1,98 @@
+module IntToFloat #(parameter N = 1024, K = 48000, fs = 48000, P = 10, data_width = 24, fp_width = 32)
+	(
+		input logic clk, rst, read,
+		input logic [data_width - 1:0] data_in,
+		output logic [data_width - 1:0] ItoF_data,
+		output logic ItoF_done
+	);
+	
+	logic enable;
+	logic start;
+	logic clk_en;
+	logic [data_width - 1:0] curr_sample;
+	
+	assign enable = read && ~clk_en;
+	
+	enum {idle, processing} ps, ns;
+	
+	floatingpoint ItoF (.clk(clk), .clk_en(clk_en), .dataa({{8{curr_sample}}, curr_sample}), .datab(0),
+									.n(2), .reset(rst), .reset_req(1'b0), .start(start),
+									.done(ItoF_done), .result(ItoF_data));
+	always_comb begin
+		case(ps)
+			idle:			if (enable) 		ns = processing;
+							else 					ns = idle;
+			processing:	if (ItoF_done) 	ns = idle;
+							else					ns = processing;
+		endcase
+	end
+	
+	always_ff @(posedge clk) begin
+		if (rst) begin
+			ps <= idle;
+		end else begin
+			ps <= ns;
+		end
+	end
+	
+	always_ff @(posedge clk) begin
+		if (rst) begin
+			clk_en <= 1'b0;
+		end
+		
+		if (ps == idle && ~enable) begin
+			curr_sample <= data_in;
+		end
+		
+		if (ps == idle && enable) begin
+			start <= 1'b1;
+		end
+		
+		if (ps == idle && enable) begin
+			clk_en <= 1'b1;
+		end
+		
+		if (ps == processing) begin
+			start <= 1'b0;
+		end
+		
+		if (ps == processing && ItoF_done) begin
+			clk_en <= 1'b0;
+		end
+	end
+endmodule
+	
+`timescale 1 ps / 1 ps
+module IntToFloat_testbench();
+	parameter N = 1024, K = 48000, fs = 48000, P = 10, data_width = 24, fp_width = 32;
+	
+	logic clk, rst, read;
+	logic [data_width - 1:0] data_in;
+	logic [data_width - 1:0] ItoF_data;
+	logic ItoF_done;
+	
+	IntToFloat dut (.*);
+	
+	// Set up the clock
+	integer ctr;
+	parameter CLOCK_PERIOD = 100;
+	
+	initial begin
+		ctr <= 0;
+		clk <= 0;
+		forever #(CLOCK_PERIOD / 2) clk <= ~clk;
+	end
+	
+	initial begin
+		rst <= 1'b1; @(posedge clk);
+		rst <= 1'b0; @(posedge clk);
+		
+		read <= 1'b1; @(posedge clk);
+		
+		repeat (10 * N) begin
+			data_in <= ctr; ctr <= ctr + 1'b1; @(posedge clk);
+		end
+		
+		$stop;
+	end
+endmodule

@@ -1,0 +1,31 @@
+# system info floatingpoint on 2020.02.28.12:41:11
+system_info:
+name,value
+DEVICE,5CSEMA5F31C6
+DEVICE_FAMILY,Cyclone V
+GENERATION_ID,1582922471
+#
+#
+# Files generated for floatingpoint on 2020.02.28.12:41:11
+files:
+filepath,kind,attributes,module,is_top
+simulation/floatingpoint.v,VERILOG,,floatingpoint,true
+simulation/submodules/fpoint2_multi.vhd,VHDL,,fpoint2_multi,false
+simulation/submodules/fpoint2_multi_datapath.vhd,VHDL,,fpoint2_multi,false
+simulation/submodules/fpoint2_multi_dspba_library_package.vhd,VHDL,,fpoint2_multi,false
+simulation/submodules/fpoint2_multi_dspba_library.vhd,VHDL,,fpoint2_multi,false
+simulation/submodules/FPAddSub/FPAddSub.vhd,VHDL,,fpoint2_multi,false
+simulation/submodules/FPDiv/FPDiv.vhd,VHDL,,fpoint2_multi,false
+simulation/submodules/FPMult/FPMult.vhd,VHDL,,fpoint2_multi,false
+simulation/submodules/IntToFloat/IntToFloat.vhd,VHDL,,fpoint2_multi,false
+simulation/submodules/FloatToInt/FloatToInt.vhd,VHDL,,fpoint2_multi,false
+simulation/submodules/FPSqrt/FPSqrt_safe_path.vhd,VHDL,,fpoint2_multi,false
+simulation/submodules/FPSqrt/FPSqrt.vhd,VHDL,,fpoint2_multi,false
+simulation/submodules/FPSqrt/FPSqrt_memoryC0_uid59_sqrtTableGenerator_lutmem.hex,HEX,,fpoint2_multi,false
+simulation/submodules/FPSqrt/FPSqrt_memoryC1_uid60_sqrtTableGenerator_lutmem.hex,HEX,,fpoint2_multi,false
+simulation/submodules/FPSqrt/FPSqrt_memoryC2_uid61_sqrtTableGenerator_lutmem.hex,HEX,,fpoint2_multi,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+floatingpoint.nios_custom_instr_floating_point_2_multi_0,fpoint2_multi
